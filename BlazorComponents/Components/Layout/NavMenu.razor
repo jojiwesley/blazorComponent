@@ -1,4 +1,4 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@* <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BlazorComponents</a>
     </div>
@@ -26,5 +26,34 @@
             </NavLink>
         </div>
     </nav>
-</div>
-
+</div> *@
+<nav class="navbar navbar-dark navbar-expand-md fixed-top p-0">
+    <div class="container bg-black ">
+        <a class="navbar-brand" href="#">Blazor Component</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Image</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
