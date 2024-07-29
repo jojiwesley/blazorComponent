@@ -1,0 +1,32 @@
+﻿@using BlazorComponents.Enums
+
+<div class="card">
+    <img src="@ImageSrc" class="card-img-top"loading="lazy" alt="Img-Card">
+  <div class="card-body text-center">
+        <h5 class="card-title ">@CardTitle</h5>
+        <p class="card-text">
+            @CardText
+        </p>
+        <a href="#" class="btn btn-primary">@BtnText</a>
+  </div>
+</div>
+
+@code {
+    [Parameter]
+    public Size width { get; set; }
+    [Parameter]
+    public string? ImageSrc { get; set; }
+    [Parameter]
+    public string? CardTitle { get; set; } 
+    [Parameter]
+    public string? CardText { get; set; }    
+    [Parameter]
+    public string? BtnText { get; set; }
+
+    private string CssClass => width switch
+    {
+        Size.small => "width-small",
+        Size.medium => "width-small",
+        Size.large => "width-small",
+    };
+}

@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Components\CallToActions\NovaPasta\**" />
+    <Content Remove="Components\CallToActions\NovaPasta\**" />
+    <EmbeddedResource Remove="Components\CallToActions\NovaPasta\**" />
+    <None Remove="Components\CallToActions\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Cards\CardDefault.razor~RFa327f1.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BlazorComponents.Client\BlazorComponents.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.7" />
   </ItemGroup>

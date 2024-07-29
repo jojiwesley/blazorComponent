@@ -1,0 +1,40 @@
+﻿
+<section class="bg-black">
+    <div class="container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-lg-6 align-content-center">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2>Utilidades</h2>
+                    </div>
+                    <div class="col-10 mb-4">
+                        @for (var i = 0; i < 6; i++)
+                        {
+                            <div class="row align-content-center mb-3">
+                                <div class="col-auto align-content-center">
+                                    <i class="bi bi-lightning-charge-fill icon"></i>
+                                </div>
+                                <div class="col align-content-center text__item mb-3">
+                                    <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting <strong>industry.</strong>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-12">
+                      <ButtonDefault />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 align-content-center text-center">
+                <picture>
+                    <source srcset="" media="(min-width: 768px)">
+                    <source srcset="" media="(min-width: 424px)">
+                    <img src="https://picsum.photos/700/800" alt="Img">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+@code {
+
+}

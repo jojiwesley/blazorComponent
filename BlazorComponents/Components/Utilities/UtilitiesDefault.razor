@@ -1,0 +1,36 @@
+﻿<style>
+    @@media(min-width:1440px){
+        .content__Utilities {
+            height: auto;
+        }
+    }
+</style>
+
+<section class="bg-dark content__Utilities">
+    <div class="container h-100 align-content-center py-5">
+        <div class="row justify-content-center align-content-center ">
+            <div class="col-12 mb-4">
+                <h2 class="text-white text-center display-3 fw-bold mb-3">Utilidades</h2>
+                <p class="text-white text-center fs-4">
+                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+                </p>
+            </div>
+       
+            @for (var i = 0; i < 3; i++)
+            {
+                <div class="col-md-5 col-xl-3 mb-4 mb-xl-0">
+                    <CardDefault 
+                    ImageSrc="https://picsum.photos/400/200" 
+                    CardTitle="Lorem Ipsum" 
+                    CardText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." 
+                    BtnText="Saiba mais" />
+                </div>
+            }
+        </div>
+    </div>
+</section>
+@code {
+
+}
