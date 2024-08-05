@@ -14,12 +14,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Pages\Banners.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Components\Cards\CardDefault.razor~RFa327f1.TMP" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorComponents.Client\BlazorComponents.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\Pages\Banners.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Components\Pages\Banners.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\Pages\Banners.razor" />
   </ItemGroup>
 
 </Project>
