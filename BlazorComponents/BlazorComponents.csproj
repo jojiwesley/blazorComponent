@@ -9,9 +9,11 @@
   </PropertyGroup>
 	
     <Target Name="CompileSass" BeforeTargets="Build">
-		<Exec Command="sass wwwroot/sass/style.scss wwwroot/css/style.css" />
 		<!-- Compila o CSS minificado -->
-		<Exec Command="sass wwwroot/sass/style.scss wwwroot/css/style.min.css --style=compressed" />
+		<Exec Command="sass wwwroot/bootstrap/bootstrap/scss/critical.scss wwwroot/style/critical.min.css --style=compressed" />
+		<Exec Command="sass wwwroot/bootstrap/bootstrap/scss/bootstrap.scss wwwroot/bootstrap/bootstrap/scss/bootstrap.min.css --style=compressed" />
+      
+		<Exec Command="sass wwwroot/style/style.scss  wwwroot/style/style.min.css --style=compressed" />
     </Target>
 	
   <ItemGroup>
@@ -60,11 +62,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\sass\style.scss" />
+    <Content Include="wwwroot\style\style.scss" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\style\Banners\" />
   </ItemGroup>
 
 </Project>
