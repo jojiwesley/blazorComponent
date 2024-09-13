@@ -51,10 +51,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Components\Pages\Banners.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="wwwroot\style\style.scss" />
   </ItemGroup>
 

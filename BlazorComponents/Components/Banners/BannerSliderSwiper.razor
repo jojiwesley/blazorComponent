@@ -1,0 +1,53 @@
+﻿
+<style>
+    .content__banner {
+        height: 90vh;
+    }
+</style>
+
+<section id="banner" class="position-relative content__banner">
+    <!-- Slider main container -->
+    <div class="swiper swiper__bannerSlider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            @for (var i = 0; i < 3; i++)
+            {
+                <div class="swiper-slide h-100 w-100">
+                    <div class="w-100 h-100 position-absolute mask">
+                        <div class="container h-100">
+                            <div class="row h-100 justify-content-center align-content-center">
+                                <div class="col-lg-5 align-self-center">
+                                    <h1 class="text-white display-4 fw-bolder mb-4">Lorem Ipsum.</h1>
+                                    <h2 class="text-white fs-3 fw-normal mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                                    <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <picture>
+                        <source media="(max-width:768px )" srcset="https://picsum.photos/768/1024">
+                        <source media="(max-width:425px )" srcset="https://picsum.photos/424/896">
+                        <img class="w-100 h-100" src="https://picsum.photos/1920/800" alt="Imagem do banner" />
+                    </picture>
+                </div>
+
+            }
+
+        </div>
+        <!-- Swiper pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Swiper Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Swiper Scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+</section>
+@code {
+
+}
