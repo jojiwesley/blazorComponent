@@ -1,0 +1,23 @@
+@import"../variables/variables.scss";
+
+
+$colorPrimary:blue;
+.about__container {
+    height: 80vh;
+
+    h2 {
+        color: $colorPrimary;
+        font-weight: 600;
+    }
+
+    span {
+        color: $colorPrimary;
+    }
+
+    img {
+        height: 550px;
+        width: 80%;
+        object-fit: cover;
+        border-radius: map-get($borders,"border-2");
+    }
+}
